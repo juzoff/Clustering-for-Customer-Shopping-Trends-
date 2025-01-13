@@ -37,21 +37,20 @@ Analyzed the Customer Shopping Trends dataset using clustering to uncover patter
   - Elbow Method: Plotted inertia versus the number of clusters to determine the optimal cluster count, aiming for a point where adding more clusters doesn't significantly reduce inertia.
   - Cluster Assignment: With 4 clusters chosen, K-means was applied to segment customers based on their shopping patterns.
 
-### 3. Conducting Principal Component Analysis (PCA)
+### 3. Conducting Principal Component Analysis (PCA) and Visualization 
 - Dimensionality Reduction:
   - PCA was used to reduce the feature space to 2 dimensions for easier visualization.
   - PCA components were calculated from the scaled features to capture the variance within the data in lower dimensions.
 
-### 4. Clustering and Principal Component Analysis (PCA) Visualization
 - Visualization:
   - Plotted the first two principal components with each point colored according to its cluster assignment, using matplotlib to create a scatter plot.
   - This visual representation helped in understanding how well-separated the clusters were in the reduced dimension space.
 
-### 5. Summary of Analysis Steps and Results
+### 4. Summary of Analysis Steps and Results
 - Process Overview:
   - From data loading and preprocessing, through clustering and dimensionality reduction, to visualization, each step was methodically executed to derive meaningful segments from the shopping trends data.
 - Results:
   - Displayed mean values for each cluster, offering a quantitative summary of how different clusters behave or purchase.
 
-### 6. Interpretation of Clusters, Insights, and Marketing Strategy Development
+### 5. Interpretation of Clusters, Insights, and Marketing Strategy Development
 - 
