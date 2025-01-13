@@ -3,28 +3,9 @@ Analyzed the Customer Shopping Trends dataset using clustering to uncover patter
 
 ---
 
-## Outcome - ***Development of 4 Consumer Clusters:***
-
-#### Cluster 1: Footwear Focused Shoppers
-- Purchase Patterns: The data shows 100% of purchases in the Footwear category (Category_Footwear = 1.0), emphasizing their focus on shoes. Items like boots (0.240401), sandals (0.267112), and sneakers (0.24207) are frequently bought, suggesting seasonal or activity-specific purchases.
-
-#### Cluster 2: Accessory Enthusiasts
-- Purchase Patterns: Exclusive purchase in Accessories (Category_Accessories = 1.000000) with items like belts, handbags, and sunglasses, supporting the notion of accessories as status or style symbols.
-
-#### Cluster 3: Promo-Driven Generalists (Male only)
-- Gender: Exclusively male (100% male), which fits with the description of strategic shopping behavior.
-- Price Sensitivity: The 100% discount usage rate underscores their price sensitivity.
-- Engagement: High subscription rate (62.20%) matches with being responsive to marketing communications to catch deals.
-- Promo Code Used: The 100% promo code usage rate further describes this cluster.
-
-#### Cluster 4: Clothing and Outerwear Enthusiasts
-- Purchase Patterns: Focus on Clothing and Outerwear (84.82% and 15.18% respectively), with no discount usage, indicating a focus on quality or fashion over price.
-
----
-
 ## Components: 
 ### 1. Data Exploration and Initial Insights
-- Loading the Dataset: Used pandas to load "shopping_trends_updated.csv" into DataFrames st and st2.
+- Loading the Dataset: Used pandas to load "shopping_trends_updated.csv" into DataFrame st.
 - Initial Data Inspection:
   - Displayed the first few rows with st.head() to see sample data entries.
   - Used st.info() to get an overview of data types, non-null counts, and memory usage, which helps in identifying data quality issues like missing values.
@@ -36,6 +17,9 @@ Analyzed the Customer Shopping Trends dataset using clustering to uncover patter
 - K-means Clustering:
   - Elbow Method: Plotted inertia versus the number of clusters to determine the optimal cluster count, aiming for a point where adding more clusters doesn't significantly reduce inertia.
   - Cluster Assignment: With 4 clusters chosen, K-means was applied to segment customers based on their shopping patterns.
+
+![em](https://github.com/user-attachments/assets/a65407fa-b859-4a9f-a506-ac0e2ab72023)
+
 
 ### 3. Conducting Principal Component Analysis (PCA) and Visualization 
 - Dimensionality Reduction:
@@ -53,4 +37,69 @@ Analyzed the Customer Shopping Trends dataset using clustering to uncover patter
   - Displayed mean values for each cluster, offering a quantitative summary of how different clusters behave or purchase.
 
 ### 5. Interpretation of Clusters, Insights, and Marketing Strategy Development
-- 
+#### Cluster 1: Accessory Enthusiasts
+- Age: 44.21 (slightly older demographic)
+- Purchase Amount (USD): 60.89 (moderate spending)
+- Size, Season, Review Rating: Moderate values for size and season, slightly higher review ratings suggesting satisfaction.
+- Subscription Status, Discount Applied, Promo Code Used: No use of subscriptions or discounts, indicating perhaps these customers are buying at full price due to brand loyalty or specific product interest.
+- Previous Purchases: 25.64 (moderate history of purchases)
+- Gender Distribution: More female (56%) than male (44%)
+- Item Purchased: Strong preference for accessories like belts, handbags, jewelry, and sunglasses.
+- Insights
+  - This group shows a targeted interest in fashion accessories, possibly valuing quality or brand over price.
+- Marketing Strategy/Strategic Actions:
+  - Product Enhancement: Focus on premium accessory lines, exclusive designs.
+  - Brand Loyalty Programs: Develop loyalty schemes tailored for accessory lovers, perhaps offering early access to new collections.
+  - Influencer Marketing: Partner with fashion influencers who specialize in accessories to attract similar demographics.
+  - Educational Content: Provide styling tips or accessory pairing guides to enhance customer engagement.
+
+#### Cluster 2: Clothing and Outerwear Enthusiasts
+- Age: 43.70 (similar to Accessory Enthusiasts)
+- Purchase Amount (USD): 59.99 (slightly less than accessories but still moderate)
+- Size, Season: Moderate, with a clear focus on clothing and outerwear items.
+- Review Rating: Slightly lower than Accessory Enthusiasts, suggesting room for improvement in satisfaction.
+- Subscription Status, Discount Applied, Promo Code Used: No use of promotions, might be less price-sensitive.
+- Previous Purchases: 24.77 (slightly less frequent than others)
+- Gender Distribution: Balanced but slightly more female.
+- Item Purchased: Dominance in clothing items like blouses, coats, jeans, etc.
+- Insights:
+  - This group has a wide interest in clothing, focusing on both everyday wear and outerwear.
+- Marketing Strategy/Strategic Actions:
+  - Seasonal Campaigns: Leverage seasonal changes with targeted outerwear promotions.
+  - Fashion Trends: Keep up-to-date with fashion trends to offer what this group seeks in clothing.
+  - Customer Feedback: Use feedback to improve product quality or fit, aiming to increase satisfaction.
+  - Personalized Fittings: Offer virtual or in-store personalized fitting services.
+
+#### Cluster 3: Footwear Focused Shoppers
+- Age: 44.44 (slightly older demographic)
+- Purchase Amount (USD): 60.26 (slightly above average spending)
+- Size, Season: Moderate, with a strong focus on footwear.
+- Review Rating: Highest among clusters, indicating high satisfaction with footwear purchases.
+- Subscription Status, Discount Applied, Promo Code Used: Some engagement with promotions, suggesting price sensitivity for footwear.
+- Previous Purchases: 25.23 (consistent with other clusters)
+- Gender Distribution: More male (67%) than female.
+- Item Purchased: Exclusively focused on shoes, boots, sandals, and sneakers.
+- Insights:
+  - Specialization in footwear, with a preference for comfort or style in their purchases.
+- Marketing Strategy/Strategic Actions:
+  - Footwear Innovation: Invest in new materials or technologies for comfort and durability.
+  - Comfort Campaigns: Market comfort alongside style, especially targeting male consumers.
+  - Special Events: Host or sponsor running or walking events to promote footwear.
+  - Loyalty Discounts: Offer loyalty points or discounts specifically for footwear purchases.
+
+#### Cluster 4: Promo-Driven Generalists (Male only)
+- Age: 44.15 (consistent with other clusters)
+- Purchase Amount (USD): 58.82 (lowest among clusters)
+- Size, Season: Similar to others, with a broad range of items purchased.
+- Review Rating: Similar to Clothing Enthusiasts, suggesting satisfaction but room for improvement.
+- Subscription Status, Discount Applied, Promo Code Used: High engagement (1.00 for both discount applied and promo code used), indicating a highly price-sensitive group.
+- Previous Purchases: 25.74 (highest among clusters, showing frequent purchases when incentivized)
+- Gender Distribution: Exclusively male.
+- Item Purchased: Spread across various categories but with a focus on clothing and accessories.
+- Insights:
+  - This group uses promotions to drive their buying decisions, showing cost-conscious behavior.
+- Marketing Strategy/Strategic Actions:
+  - Promotional Offers: Continuously offer deals and promotions to keep engagement high.
+  - Exclusive Male Lines: Develop or promote lines specifically marketed to men, focusing on value.
+  - Feedback Loop: Use this group's feedback to refine promotional strategies.
+  - Cross-Selling: Use promotions to introduce new product categories to this group, leveraging their purchase frequency.
