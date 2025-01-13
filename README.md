@@ -37,7 +37,7 @@ Analyzed the Customer Shopping Trends dataset using clustering to uncover patter
   - Displayed mean values for each cluster, offering a quantitative summary of how different clusters behave or purchase.
 
 ### 5. Interpretation of Clusters, Insights, and Marketing Strategy Development
-#### Cluster 1: Accessory Enthusiasts
+#### *Cluster 1: Accessory Enthusiasts
 - Age: 44.21 (slightly older demographic)
 - Purchase Amount (USD): 60.89 (moderate spending)
 - Size, Season, Review Rating: Moderate values for size and season, slightly higher review ratings suggesting satisfaction.
@@ -53,7 +53,7 @@ Analyzed the Customer Shopping Trends dataset using clustering to uncover patter
   - Influencer Marketing: Partner with fashion influencers who specialize in accessories to attract similar demographics.
   - Educational Content: Provide styling tips or accessory pairing guides to enhance customer engagement.
 
-#### Cluster 2: Clothing and Outerwear Enthusiasts
+#### *Cluster 2: Clothing and Outerwear Enthusiasts
 - Age: 43.70 (similar to Accessory Enthusiasts)
 - Purchase Amount (USD): 59.99 (slightly less than accessories but still moderate)
 - Size, Season: Moderate, with a clear focus on clothing and outerwear items.
@@ -70,7 +70,7 @@ Analyzed the Customer Shopping Trends dataset using clustering to uncover patter
   - Customer Feedback: Use feedback to improve product quality or fit, aiming to increase satisfaction.
   - Personalized Fittings: Offer virtual or in-store personalized fitting services.
 
-#### Cluster 3: Footwear Focused Shoppers
+#### *Cluster 3: Footwear Focused Shoppers
 - Age: 44.44 (slightly older demographic)
 - Purchase Amount (USD): 60.26 (slightly above average spending)
 - Size, Season: Moderate, with a strong focus on footwear.
@@ -87,7 +87,7 @@ Analyzed the Customer Shopping Trends dataset using clustering to uncover patter
   - Special Events: Host or sponsor running or walking events to promote footwear.
   - Loyalty Discounts: Offer loyalty points or discounts specifically for footwear purchases.
 
-#### Cluster 4: Promo-Driven Generalists (Male only)
+#### *Cluster 4: Promo-Driven Generalists (Male only)
 - Age: 44.15 (consistent with other clusters)
 - Purchase Amount (USD): 58.82 (lowest among clusters)
 - Size, Season: Similar to others, with a broad range of items purchased.
